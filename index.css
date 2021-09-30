@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+body {
+  background: rgb(247, 240, 240);
+}
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+}
+.close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.close:hover {
+  background: #00d9ff;
+}
+#heading {
+  padding: 10px;
+}
+#Description {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.c0 {
+  padding: auto;
+  background-color: #efefef;
+}
+
+.inner {
+  padding-top: 15px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.rating {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.rating-num {
+  color: #333333;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+.rating-users {
+  font-size: 15px;
+}
+
+.bar {
+  display: block;
+}
+
+#bar-five {
+  width: 0;
+  background-color: #9fc05a;
+}
+
+.main {
+  margin-top: 20px;
+  padding-top: 60px;
+}
+#revw {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
